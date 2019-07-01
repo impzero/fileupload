@@ -26,7 +26,7 @@ func UploadToHost(file *os.File, name string) (string, error) {
 
 	defer file.Close()
 
-	if fw, err = writer.CreateFormFile("file:1", file.Name()); err != nil {
+	if fw, err = writer.CreateFormFile("f:1", file.Name()); err != nil {
 		return "", err
 	}
 
